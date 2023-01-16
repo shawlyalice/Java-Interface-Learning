@@ -1,0 +1,61 @@
+﻿Interface Eatable:
+
+
+(i)  gather() [not implemented]
+(ii) cook()   [not implemented]
+(iii) serve()  [not implemented]
+
+
+Interface HomeFood (extends Eatable)
+
+
+(i) keepInFridge() [not implemented]
+
+
+* (3 Methods from Eatable) [not implemented]
+
+
+Interface FastFood (extends Eatable)
+
+
+(i) PackFood() [not implemented]
+
+
+* (3 Methods from Eatable) [not implemented]
+
+
+Interface RiceFood (extends HomeFood)
+
+
+(i) boilRice() [not implemented]
+
+
+* (3 Methods from Eatable) [not implemented]
+* (1 method from HomeFood)[not implemented]
+
+
+Interface Richfood:
+
+
+(i) giveOil() [not implemented]
+(ii) giveSpice() [not implemented]
+
+
+Abstract Class Khichuri (implements Richfood, RiceFood):
+
+
+* (3 Methods from Eatable) [All but cook() implemented]
+* (1 method from HomeFood)[All implemented]
+* (2 methods from RiceFood)[All implemented]
+
+
+Class JogaKhichuri (extends Khichuri)
+
+
+cook() implemented
+
+
+Class DryKhichuri (extends Khichuri)  [Implement DryKhichuri Yourself]
+
+
+cook() implemented differently
